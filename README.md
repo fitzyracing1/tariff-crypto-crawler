@@ -95,3 +95,38 @@ This installs the `tariff-crypto-mcp` console script. Environment variables:
 ```
 
 If the script isn't on your PATH, set `command` to the full path, for example `/path/to/.venv/bin/tariff-crypto-mcp`.
+
+## Landed-cost route search (`landed_cost` MCP tool)
+
+`landed_cost(hs, origin="any", destination="US"|"PT"|"EU"|"UK", value=100, freight=0, insurance=0, seller_accepts_crypto=False)`
+ranks the cheapest **legal** origin routes for an HS code (or keyword) by:
+
+- origin side: export VAT/GST treatment (zero-rating / refund), export duties, notable export zones (`data/landed/origin/origins.json`, statutory bases + official links);
+- import duty: MFN and preferential (trade agreements / GSP-type schemes) plus additional duties (US Section 301 incl. U.S. note 52, Section 232; UK/EU additional duties);
+- import VAT/GST: UK from tariff measures, Portugal CIVA art. 18 (23% / 13% / 6%), US none federally.
+
+Valuation: US duty on transaction (FOB) value; EU/UK duty on CIF; VAT on CIF + duty. Rates not in the
+snapshots are returned as `"check source"` and are never guessed; such routes are marked incomplete.
+The crypto filter is a placeholder (no seller data yet) and paying in crypto never changes duty: customs
+value is the transaction value converted to local currency.
+
+Data (`data/landed/meta.json` has coverage, sources and dates):
+
+| Destination | Source | Notes |
+|---|---|---|
+| US | USITC HTS 2026 Rev 21 (from `fitzyracing1/space-money` `data/hts`), Ch.99 U.S. note 52 (`tools/build_us_note52.py`) | full HTS |
+| PT / EU | EU CET via UK Online Trade Tariff `xi` API (Northern Ireland applies the EU tariff), Portugal CIVA | seeded headings |
+| UK | UK Global Tariff + preferences + VAT via UK Online Trade Tariff `uk` API | seeded headings |
+
+Refresh (manual, polite: 1 request / 1.2 s, identified User-Agent; CI never fetches):
+
+```bash
+python tools/build_uk_xi_snapshot.py 6109 6110 ...   # UK + XI
+python tools/build_us_note52.py                       # US note 52
+python tools/build_meta.py
+python tools/export_landed_page.py ../space-money/data/landed/landed.json
+```
+
+Compliance: preference needs genuine origin under the agreement's rules of origin and proof
+(certificate / statement on origin, REX, USMCA certification). Transshipment or relabeling to change
+origin is customs fraud. Not legal or tax advice.

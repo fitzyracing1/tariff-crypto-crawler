@@ -16,6 +16,10 @@ from mcp.types import ToolAnnotations
 
 from .crawl import MIN_SCORE, make_lead
 from .fetch import Fetcher, url_hash
+from .landed_cost import compare_plan as _compare_plan
+from .landed_cost import export_control_flag as _export_control_flag
+from .landed_cost import landed_cost as _landed_cost
+from .landed_cost import space_route as _space_route
 from .sources import federal_register, google_news, hackernews
 
 # Only no-auth public APIs/feeds are allowed for on-demand scans.
@@ -180,6 +184,39 @@ def match_suppliers(hts_code: str) -> dict:
     """Legal zero/low-duty program info (USMCA, other US FTAs, AGOA, FTZ, drawback) for an HTS code.
     Rates are never guessed: check the USITC HTS. Includes a compliance caveat."""
     return supplier_programs(hts_code)
+
+
+@mcp.tool(annotations=RO)
+def landed_cost(hs: str, origin: str = "any", destination: str = "US", value: float = 100.0,
+                freight: float = 0.0, insurance: float = 0.0, seller_accepts_crypto: bool = False) -> dict:
+    """Rank cheapest LEGAL origin routes for an HS code (or keyword) into US, PT/EU or UK.
+    Uses offline official snapshots (USITC HTS 2026 Rev 21 + Ch.99, UK Online Trade Tariff uk/xi, CIVA).
+    Sums origin export duty, import duty (MFN/preferential + additional) and import VAT.
+    Unknown rates are 'check source', never guessed. Crypto filter is a placeholder (no seller data;
+    crypto payment does not change duty). Includes rules-of-origin compliance notes; not legal advice."""
+    return _landed_cost(hs, origin, destination, value, freight, insurance, seller_accepts_crypto)
+
+
+@mcp.tool(annotations=RO)
+def compare_plan(hs: str, origin: str, destination: str = "US", value: float = 100.0, freight: float = 0.0,
+                 insurance: float = 0.0, qty: float | None = None, weight_kg: float | None = None) -> dict:
+    """Compare to my plan: landed cost of the user's planned route (HS, origin, destination, value, qty/weight)
+    beside the cheapest legal alternative origins, with savings in $ and %. destination='SPACE' returns
+    launch options by weight. Unknown rates are 'check source'. Not legal advice."""
+    return _compare_plan(hs, origin, destination, value, freight, insurance, qty, weight_kg)
+
+
+@mcp.tool(annotations=RO)
+def space_launch_cost(weight_kg: float, value: float | None = None) -> dict:
+    """Launch cost to orbit by weight from publicly posted per-kg prices only (source URL + date).
+    No tariff applies in orbit; ITAR/EAR export-control caveats are given as text, not computed."""
+    return _space_route(weight_kg, value)
+
+
+@mcp.tool(annotations=RO)
+def export_control_flag(hs: str) -> dict:
+    """Text-only hint whether an HS code is likely ITAR/EAR-relevant (for SpaceLog attestation). Not a determination."""
+    return _export_control_flag(hs)
 
 
 def main():

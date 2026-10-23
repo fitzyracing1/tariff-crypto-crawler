@@ -1,0 +1,161 @@
+{
+ "built": "2026-10-23",
+ "policy": "Official public data only; rates not in snapshots are 'check source'. CI never fetches.",
+ "destinations": {
+  "US": {
+   "lines": 23696,
+   "additional_ch99_rows": 24169,
+   "note52_countries": 60,
+   "sources": [
+    "USITC HTS 2026 Revision 21 (revision date 2026-10-07, effective 2026-10-09) https://hts.usitc.gov/reststop/exportList (copied from fitzyracing1/space-money data/hts)",
+    "USITC HTS 2026 Revision 21, Chapter 99 subchapter III U.S. note 52 (headings 9903.05.20-9903.06.21) https://hts.usitc.gov/reststop/exportList?from=9903.05&to=9903.07&format=JSON&styles=false"
+   ],
+   "dates": {
+    "hts_revision": "2026 Rev 21 (2026-10-07)",
+    "note52_built": "2026-10-23T06:51:23Z"
+   },
+   "import_vat": "none federally; state sales/use tax not modelled",
+   "gaps": [
+    "specific/compound rates need quantity",
+    "AD/CVD orders not modelled",
+    "note 52 exceptions and GSP/AGOA eligibility: check source",
+    "MPF/HMF fees not included"
+   ]
+  },
+  "PT": {
+   "headings": [
+    "0901",
+    "3304",
+    "4202",
+    "6104",
+    "6105",
+    "6106",
+    "6109",
+    "6110",
+    "6203",
+    "6204",
+    "6205",
+    "6206",
+    "6403",
+    "6404",
+    "8471",
+    "8504",
+    "8507",
+    "8517",
+    "8528",
+    "9403",
+    "9503"
+   ],
+   "commodity_lines": 496,
+   "fetched": [
+    "2026-10-23"
+   ],
+   "sources": [
+    "EU Common External Tariff via UK Online Trade Tariff API (HMRC/DBT), documented public API, Open Government Licence v3.0: https://www.trade-tariff.service.gov.uk/xi/api/ (docs https://api.trade-tariff.service.gov.uk/reference.html) (Northern Ireland applies the EU tariff; verify in EU TARIC https://ec.europa.eu/taxation_customs/dds2/taric/taric_consultation.jsp)",
+    "Portugal VAT CIVA art. 18 https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx (checked 2026-10-23)"
+   ],
+   "gaps": [
+    "only seeded headings",
+    "TARIC-only EU measures not mirrored in XI (e.g. some AD duties) may differ",
+    "Lista I/II reduced-rate goods not mapped (23% assumed for others)",
+    "Azores/Madeira rates"
+   ]
+  },
+  "EU": {
+   "headings": [
+    "0901",
+    "3304",
+    "4202",
+    "6104",
+    "6105",
+    "6106",
+    "6109",
+    "6110",
+    "6203",
+    "6204",
+    "6205",
+    "6206",
+    "6403",
+    "6404",
+    "8471",
+    "8504",
+    "8507",
+    "8517",
+    "8528",
+    "9403",
+    "9503"
+   ],
+   "commodity_lines": 496,
+   "fetched": [
+    "2026-10-23"
+   ],
+   "sources": [
+    "as PT (CET only)"
+   ],
+   "gaps": [
+    "member-state VAT not included: check source"
+   ]
+  },
+  "UK": {
+   "headings": [
+    "0901",
+    "2204",
+    "3304",
+    "4202",
+    "6104",
+    "6105",
+    "6106",
+    "6109",
+    "6110",
+    "6203",
+    "6204",
+    "6205",
+    "6206",
+    "6403",
+    "6404",
+    "8471",
+    "8504",
+    "8507",
+    "8517",
+    "8528",
+    "9403",
+    "9503"
+   ],
+   "commodity_lines": 861,
+   "fetched": [
+    "2026-10-23"
+   ],
+   "sources": [
+    "UK Global Tariff, preferences and import VAT via UK Online Trade Tariff API (HMRC/DBT), documented public API, Open Government Licence v3.0: https://www.trade-tariff.service.gov.uk/uk/api/ (docs https://api.trade-tariff.service.gov.uk/reference.html)"
+   ],
+   "gaps": [
+    "only seeded headings",
+    "quota status not live",
+    "VAT reliefs by footnote not mapped"
+   ]
+  }
+ },
+ "space": {
+  "file": "space/launch_prices.json",
+  "retrieved": "2026-10-23",
+  "sources": [
+   "https://www.spacex.com/rideshare",
+   "https://rideshare.spacex.com/external-search",
+   "https://newspaceeconomy.ca/2026/02/27/spacex-rideshare-pricing-as-of-february-2026-what-it-costs-whats-included-and-how-buyers-budget-a-mission/",
+   "https://www.rideshareledger.space/prices.html"
+  ],
+  "gaps": [
+   "SpaceX price shown only in its JS calculator; figures via secondary sources citing spacex.com",
+   "other providers publish no per-kg price: check source",
+   "ITAR/EAR not computed (text only)"
+  ]
+ },
+ "origin": {
+  "file": "origin/origins.json",
+  "verified_links_on": "2026-10-23"
+ },
+ "not_used_yet": [
+  "WTO Tariff & Trade Data https://ttd.wto.org/en",
+  "WITS https://wits.worldbank.org/"
+ ]
+}
