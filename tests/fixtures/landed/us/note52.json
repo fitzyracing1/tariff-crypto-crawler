@@ -1,0 +1,554 @@
+{
+ "built_at": "2026-10-23T06:51:23Z",
+ "countries": {
+  "AE": {
+   "add_pct": 12.5,
+   "country": "the United Arab Emirates",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.80"
+   ],
+   "kind": "additive"
+  },
+  "AO": {
+   "add_pct": 12.5,
+   "country": "Angola",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.21"
+   ],
+   "kind": "additive"
+  },
+  "AR": {
+   "add_pct": 10.0,
+   "country": "Argentina",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.06.10–9903.06.11",
+   "headings": [
+    "9903.05.22"
+   ],
+   "kind": "additive"
+  },
+  "AU": {
+   "add_pct": 12.5,
+   "country": "Australia",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.23"
+   ],
+   "kind": "additive"
+  },
+  "BD": {
+   "add_pct": 10.0,
+   "country": "Bangladesh",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.06.12–9903.06.13",
+   "headings": [
+    "9903.05.26"
+   ],
+   "kind": "additive"
+  },
+  "BH": {
+   "add_pct": 12.5,
+   "country": "Bahrain",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.25"
+   ],
+   "kind": "additive"
+  },
+  "BR": {
+   "add_pct": 12.5,
+   "country": "Brazil",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.27"
+   ],
+   "kind": "additive"
+  },
+  "BS": {
+   "add_pct": 12.5,
+   "country": "the Bahamas",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.24"
+   ],
+   "kind": "additive"
+  },
+  "CA": {
+   "add_pct": 10.0,
+   "country": "Canada",
+   "exceptions": "9903.05.85–9903.05.93",
+   "headings": [
+    "9903.05.29"
+   ],
+   "kind": "additive"
+  },
+  "CH": {
+   "country": "Switzerland",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.05.98",
+   "floor_pct": 12.5,
+   "headings": [
+    "9903.05.73",
+    "9903.05.74"
+   ],
+   "kind": "floor"
+  },
+  "CL": {
+   "add_pct": 12.5,
+   "country": "Chile",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.30"
+   ],
+   "kind": "additive"
+  },
+  "CN": {
+   "add_pct": 12.5,
+   "country": "China",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.31"
+   ],
+   "kind": "additive"
+  },
+  "CO": {
+   "add_pct": 12.5,
+   "country": "Colombia",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.32"
+   ],
+   "kind": "additive"
+  },
+  "CR": {
+   "add_pct": 12.5,
+   "country": "Costa Rica",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.05.95",
+   "headings": [
+    "9903.05.33"
+   ],
+   "kind": "additive"
+  },
+  "DO": {
+   "add_pct": 12.5,
+   "country": "Dominican Republic",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.05.95",
+   "headings": [
+    "9903.05.34"
+   ],
+   "kind": "additive"
+  },
+  "DZ": {
+   "add_pct": 12.5,
+   "country": "Algeria",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.20"
+   ],
+   "kind": "additive"
+  },
+  "EC": {
+   "add_pct": 10.0,
+   "country": "Ecuador",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.06.18–9903.06.19",
+   "headings": [
+    "9903.05.35"
+   ],
+   "kind": "additive"
+  },
+  "EG": {
+   "add_pct": 12.5,
+   "country": "Egypt",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.36"
+   ],
+   "kind": "additive"
+  },
+  "EU": {
+   "country": "a member state of the European Union",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.05.97",
+   "floor_pct": 10.0,
+   "headings": [
+    "9903.05.38",
+    "9903.05.39"
+   ],
+   "kind": "floor"
+  },
+  "GB": {
+   "add_pct": 10.0,
+   "country": "the United Kingdom",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.05.96",
+   "headings": [
+    "9903.05.81"
+   ],
+   "kind": "additive"
+  },
+  "GT": {
+   "add_pct": 10.0,
+   "country": "Guatemala",
+   "exceptions": "9903.05.85–9903.05.92, 9903.05.95 and 9903.06.04–9903.06.06",
+   "headings": [
+    "9903.05.40"
+   ],
+   "kind": "additive"
+  },
+  "GY": {
+   "add_pct": 12.5,
+   "country": "Guyana",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.41"
+   ],
+   "kind": "additive"
+  },
+  "HK": {
+   "add_pct": 12.5,
+   "country": "Hong Kong, China",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.43"
+   ],
+   "kind": "additive"
+  },
+  "HN": {
+   "add_pct": 10.0,
+   "country": "Honduras",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.05.95",
+   "headings": [
+    "9903.05.42"
+   ],
+   "kind": "additive"
+  },
+  "ID": {
+   "add_pct": 10.0,
+   "country": "Indonesia",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.06.16–9903.06.17",
+   "headings": [
+    "9903.05.45"
+   ],
+   "kind": "additive"
+  },
+  "IL": {
+   "add_pct": 12.5,
+   "country": "Israel",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.47"
+   ],
+   "kind": "additive"
+  },
+  "IN": {
+   "add_pct": 10.0,
+   "country": "India",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.44"
+   ],
+   "kind": "additive"
+  },
+  "IQ": {
+   "add_pct": 12.5,
+   "country": "Iraq",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.46"
+   ],
+   "kind": "additive"
+  },
+  "JO": {
+   "add_pct": 10.0,
+   "country": "Jordan",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.06.20–9903.06.21",
+   "headings": [
+    "9903.05.50"
+   ],
+   "kind": "additive"
+  },
+  "JP": {
+   "country": "Japan",
+   "exceptions": "9903.05.85–9903.05.92",
+   "floor_pct": 12.5,
+   "headings": [
+    "9903.05.48",
+    "9903.05.49"
+   ],
+   "kind": "floor"
+  },
+  "KH": {
+   "add_pct": 10.0,
+   "country": "Cambodia",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.06.02–9903.06.03",
+   "headings": [
+    "9903.05.28"
+   ],
+   "kind": "additive"
+  },
+  "KR": {
+   "country": "South Korea",
+   "exceptions": "9903.05.85–9903.05.92",
+   "floor_pct": 12.5,
+   "headings": [
+    "9903.05.70",
+    "9903.05.71"
+   ],
+   "kind": "floor"
+  },
+  "KW": {
+   "add_pct": 12.5,
+   "country": "Kuwait",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.52"
+   ],
+   "kind": "additive"
+  },
+  "KZ": {
+   "add_pct": 12.5,
+   "country": "Kazakhstan",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.51"
+   ],
+   "kind": "additive"
+  },
+  "LK": {
+   "add_pct": 10.0,
+   "country": "Sri Lanka",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.72"
+   ],
+   "kind": "additive"
+  },
+  "LY": {
+   "add_pct": 12.5,
+   "country": "Libya",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.53"
+   ],
+   "kind": "additive"
+  },
+  "MA": {
+   "add_pct": 12.5,
+   "country": "Morocco",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.56"
+   ],
+   "kind": "additive"
+  },
+  "MX": {
+   "add_pct": 10.0,
+   "country": "Mexico",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.05.94",
+   "headings": [
+    "9903.05.55"
+   ],
+   "kind": "additive"
+  },
+  "MY": {
+   "add_pct": 10.0,
+   "country": "Malaysia",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.05.99–9903.06.01",
+   "headings": [
+    "9903.05.54"
+   ],
+   "kind": "additive"
+  },
+  "NG": {
+   "add_pct": 12.5,
+   "country": "Nigeria",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.59"
+   ],
+   "kind": "additive"
+  },
+  "NI": {
+   "add_pct": 12.5,
+   "country": "Nicaragua",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.05.95",
+   "headings": [
+    "9903.05.58"
+   ],
+   "kind": "additive"
+  },
+  "NO": {
+   "add_pct": 12.5,
+   "country": "Norway",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.60"
+   ],
+   "kind": "additive"
+  },
+  "NZ": {
+   "add_pct": 12.5,
+   "country": "New Zealand",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.57"
+   ],
+   "kind": "additive"
+  },
+  "OM": {
+   "add_pct": 12.5,
+   "country": "Oman",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.61"
+   ],
+   "kind": "additive"
+  },
+  "PE": {
+   "add_pct": 12.5,
+   "country": "Peru",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.63"
+   ],
+   "kind": "additive"
+  },
+  "PH": {
+   "add_pct": 12.5,
+   "country": "the Philippines",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.64"
+   ],
+   "kind": "additive"
+  },
+  "PK": {
+   "add_pct": 10.0,
+   "country": "Pakistan",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.62"
+   ],
+   "kind": "additive"
+  },
+  "QA": {
+   "add_pct": 12.5,
+   "country": "Qatar",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.65"
+   ],
+   "kind": "additive"
+  },
+  "RU": {
+   "add_pct": 12.5,
+   "country": "Russia",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.66"
+   ],
+   "kind": "additive"
+  },
+  "SA": {
+   "add_pct": 12.5,
+   "country": "Saudi Arabia",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.67"
+   ],
+   "kind": "additive"
+  },
+  "SG": {
+   "add_pct": 12.5,
+   "country": "Singapore",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.68"
+   ],
+   "kind": "additive"
+  },
+  "SV": {
+   "add_pct": 10.0,
+   "country": "El Salvador",
+   "exceptions": "9903.05.85–9903.05.92, 9903.05.95 and 9903.06.07–9903.06.09",
+   "headings": [
+    "9903.05.37"
+   ],
+   "kind": "additive"
+  },
+  "TH": {
+   "add_pct": 12.5,
+   "country": "Thailand",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.77"
+   ],
+   "kind": "additive"
+  },
+  "TR": {
+   "add_pct": 12.5,
+   "country": "Türkiye",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.79"
+   ],
+   "kind": "additive"
+  },
+  "TT": {
+   "add_pct": 10.0,
+   "country": "Trinidad and Tobago",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.78"
+   ],
+   "kind": "additive"
+  },
+  "TW": {
+   "country": "Taiwan",
+   "exceptions": "9903.05.85–9903.05.92 and 9903.06.14–9903.06.15",
+   "floor_pct": 10.0,
+   "headings": [
+    "9903.05.75",
+    "9903.05.76"
+   ],
+   "kind": "floor"
+  },
+  "UY": {
+   "add_pct": 12.5,
+   "country": "Uruguay",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.82"
+   ],
+   "kind": "additive"
+  },
+  "VE": {
+   "add_pct": 12.5,
+   "country": "Venezuela",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.83"
+   ],
+   "kind": "additive"
+  },
+  "VN": {
+   "add_pct": 12.5,
+   "country": "Vietnam",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.84"
+   ],
+   "kind": "additive"
+  },
+  "ZA": {
+   "add_pct": 12.5,
+   "country": "South Africa",
+   "exceptions": "9903.05.85–9903.05.92",
+   "headings": [
+    "9903.05.69"
+   ],
+   "kind": "additive"
+  }
+ },
+ "note": "Country-specific Section 301 duties in force from 2026-07-24. Exceptions not modelled; check source.",
+ "source": "USITC HTS 2026 Revision 21, Chapter 99 subchapter III U.S. note 52 (headings 9903.05.20-9903.06.21)",
+ "unmapped": [],
+ "url": "https://hts.usitc.gov/reststop/exportList?from=9903.05&to=9903.07&format=JSON&styles=false"
+}

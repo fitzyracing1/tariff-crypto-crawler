@@ -1,0 +1,22 @@
+{
+ "policy": "Public posted prices only. SpaceX shows rideshare prices in its online booking calculator (rideshare.spacex.com), not in page text; the figures below are as reported by public secondary sources that cite spacex.com. Verify in the official calculator before relying on them. Providers without a published per-kg price are 'check source'.",
+ "retrieved": "2026-10-23",
+ "providers": [
+  {"id": "spacex-rideshare-sso-2026", "provider": "SpaceX", "offer": "Falcon 9 Rideshare (Transporter SSO / Bandwagon mid-inclination), 2026 launches",
+   "currency": "USD", "base_price": 350000, "base_kg": 50, "per_kg_above_base": 7000, "max_kg_per_port": 831,
+   "status": "published (via secondary sources citing SpaceX); verify in official calculator",
+   "official": ["https://www.spacex.com/rideshare", "https://rideshare.spacex.com/external-search"],
+   "sources": ["https://newspaceeconomy.ca/2026/02/27/spacex-rideshare-pricing-as-of-february-2026-what-it-costs-whats-included-and-how-buyers-budget-a-mission/",
+               "https://www.rideshareledger.space/prices.html"],
+   "as_of": "2026-02 (reported); rechecked by secondary source 2026-10-18; retrieved here 2026-10-23",
+   "excludes": "separation systems, integration services, insurance, post-separation orbit changes"},
+  {"id": "spacex-rideshare-sso-2027", "provider": "SpaceX", "offer": "Falcon 9 Rideshare, 2027 launches",
+   "currency": "USD", "base_price": null, "base_kg": 50, "per_kg_above_base": 7500,
+   "status": "per-kg rate reported by secondary source; 50 kg base price: check source",
+   "official": ["https://rideshare.spacex.com/external-search"], "sources": ["https://www.rideshareledger.space/prices.html"],
+   "as_of": "2026-08 (reported); retrieved here 2026-10-23"},
+  {"id": "rocketlab", "provider": "Rocket Lab", "offer": "Electron", "status": "check source (no published per-kg price)", "official": ["https://www.rocketlabusa.com/"], "sources": []},
+  {"id": "isro-nsil", "provider": "NSIL / ISRO", "offer": "PSLV / SSLV", "status": "check source (no published per-kg price)", "official": ["https://www.nsilindia.co.in/"], "sources": []},
+  {"id": "arianespace", "provider": "Arianespace / Avio", "offer": "Vega-C", "status": "check source (no published per-kg price)", "official": ["https://www.arianespace.com/"], "sources": []}
+ ]
+}

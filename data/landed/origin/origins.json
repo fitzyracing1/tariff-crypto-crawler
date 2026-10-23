@@ -1,0 +1,359 @@
+{
+ "description": "Origin-side export tax treatment for major origins. Only statutory bases with official links; anything unverified is 'check source'.",
+ "compiled": "2026-10-23",
+ "verified_links_on": "2026-10-23",
+ "caveat": "Statutory summaries, not legal advice. Rebates/zero-rating require export evidence.",
+ "origins": {
+  "US": {
+   "name": "United States",
+   "export_vat": {
+    "treatment": "no federal VAT/GST",
+    "basis": "US has no national VAT",
+    "sources": []
+   },
+   "export_duty": {
+    "status": "prohibited",
+    "pct": 0,
+    "basis": "U.S. Constitution art. I, s. 9, cl. 5 ('No Tax or Duty shall be laid on Articles exported from any State')",
+    "sources": [
+     "https://constitution.congress.gov/browse/article-1/section-9/clause-5/"
+    ]
+   },
+   "zones": [
+    {
+     "name": "Foreign-Trade Zones",
+     "note": "duty deferral/elimination on re-exports",
+     "source": "https://www.trade.gov/foreign-trade-zones-board"
+    }
+   ]
+  },
+  "GB": {
+   "name": "United Kingdom",
+   "export_vat": {
+    "treatment": "zero-rated (0%) when exported with evidence",
+    "basis": "HMRC VAT Notice 703",
+    "sources": [
+     "https://www.gov.uk/guidance/vat-on-goods-exported-from-the-uk-notice-703"
+    ]
+   },
+   "export_duty": {
+    "status": "check source",
+    "pct": null,
+    "note": "No export duty identified in UK Global Tariff (import tariff); export controls may apply.",
+    "sources": [
+     "https://www.gov.uk/government/collections/uk-strategic-export-controls"
+    ]
+   },
+   "zones": [
+    {
+     "name": "UK Freeports",
+     "source": "https://www.gov.uk/guidance/freeports"
+    }
+   ]
+  },
+  "PT": {
+   "name": "Portugal",
+   "bloc": "EU",
+   "export_vat": {
+    "treatment": "exempt with right of deduction (zero-rated) for exports outside the EU",
+    "basis": "CIVA art. 14.º; Directive 2006/112/EC art. 146",
+    "sources": [
+     "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva14.aspx",
+     "https://eur-lex.europa.eu/eli/dir/2006/112/oj"
+    ]
+   },
+   "export_duty": {
+    "status": "none_general",
+    "pct": 0,
+    "note": "No general EU export duty; export controls/restrictions (dual-use, sanctions) may apply. Check TARIC export measures.",
+    "sources": [
+     "https://ec.europa.eu/taxation_customs/dds2/taric/taric_consultation.jsp"
+    ]
+   },
+   "zones": [
+    {
+     "name": "Zona Franca da Madeira (Madeira International Business Centre)",
+     "note": "tax regime; customs free zone - check source",
+     "source": "check source"
+    }
+   ],
+   "intra_eu_note": "Sales to another EU member state are intra-Community supplies (no customs duty); VAT per intra-EU rules."
+  },
+  "ES": {
+   "name": "Spain",
+   "bloc": "EU",
+   "export_vat": {
+    "treatment": "exempt with right of deduction (zero-rated) for exports outside the EU",
+    "refund": "input VAT recoverable via normal return",
+    "basis": "Council Directive 2006/112/EC art. 146",
+    "sources": [
+     "https://eur-lex.europa.eu/eli/dir/2006/112/oj"
+    ]
+   },
+   "export_duty": {
+    "status": "none_general",
+    "pct": 0,
+    "note": "No general EU export duty; export controls/restrictions (dual-use, sanctions) may apply. Check TARIC export measures.",
+    "sources": [
+     "https://ec.europa.eu/taxation_customs/dds2/taric/taric_consultation.jsp"
+    ]
+   },
+   "zones": [],
+   "intra_eu_note": "Sales to another EU member state are intra-Community supplies (no customs duty); VAT per intra-EU rules."
+  },
+  "IT": {
+   "name": "Italy",
+   "bloc": "EU",
+   "export_vat": {
+    "treatment": "exempt with right of deduction (zero-rated) for exports outside the EU",
+    "refund": "input VAT recoverable via normal return",
+    "basis": "Council Directive 2006/112/EC art. 146",
+    "sources": [
+     "https://eur-lex.europa.eu/eli/dir/2006/112/oj"
+    ]
+   },
+   "export_duty": {
+    "status": "none_general",
+    "pct": 0,
+    "note": "No general EU export duty; export controls/restrictions (dual-use, sanctions) may apply. Check TARIC export measures.",
+    "sources": [
+     "https://ec.europa.eu/taxation_customs/dds2/taric/taric_consultation.jsp"
+    ]
+   },
+   "zones": [],
+   "intra_eu_note": "Sales to another EU member state are intra-Community supplies (no customs duty); VAT per intra-EU rules."
+  },
+  "DE": {
+   "name": "Germany",
+   "bloc": "EU",
+   "export_vat": {
+    "treatment": "exempt with right of deduction (zero-rated) for exports outside the EU",
+    "refund": "input VAT recoverable via normal return",
+    "basis": "Council Directive 2006/112/EC art. 146",
+    "sources": [
+     "https://eur-lex.europa.eu/eli/dir/2006/112/oj"
+    ]
+   },
+   "export_duty": {
+    "status": "none_general",
+    "pct": 0,
+    "note": "No general EU export duty; export controls/restrictions (dual-use, sanctions) may apply. Check TARIC export measures.",
+    "sources": [
+     "https://ec.europa.eu/taxation_customs/dds2/taric/taric_consultation.jsp"
+    ]
+   },
+   "zones": [],
+   "intra_eu_note": "Sales to another EU member state are intra-Community supplies (no customs duty); VAT per intra-EU rules."
+  },
+  "FR": {
+   "name": "France",
+   "bloc": "EU",
+   "export_vat": {
+    "treatment": "exempt with right of deduction (zero-rated) for exports outside the EU",
+    "refund": "input VAT recoverable via normal return",
+    "basis": "Council Directive 2006/112/EC art. 146",
+    "sources": [
+     "https://eur-lex.europa.eu/eli/dir/2006/112/oj"
+    ]
+   },
+   "export_duty": {
+    "status": "none_general",
+    "pct": 0,
+    "note": "No general EU export duty; export controls/restrictions (dual-use, sanctions) may apply. Check TARIC export measures.",
+    "sources": [
+     "https://ec.europa.eu/taxation_customs/dds2/taric/taric_consultation.jsp"
+    ]
+   },
+   "zones": [],
+   "intra_eu_note": "Sales to another EU member state are intra-Community supplies (no customs duty); VAT per intra-EU rules."
+  },
+  "MX": {
+   "name": "Mexico",
+   "export_vat": {
+    "treatment": "0% VAT rate on exports (tasa 0%)",
+    "basis": "Ley del IVA art. 29",
+    "sources": [
+     "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf"
+    ]
+   },
+   "export_duty": {
+    "status": "check source",
+    "pct": null,
+    "note": "Mexico's TIGIE has export tariff column; most manufactured goods 0 but verify by fraction.",
+    "sources": [
+     "https://www.snice.gob.mx/"
+    ]
+   },
+   "zones": [
+    {
+     "name": "IMMEX (maquiladora) program",
+     "note": "temporary import of inputs without duty/VAT for export production",
+     "source": "https://www.gob.mx/se/acciones-y-programas/industria-y-comercio-immex"
+    }
+   ]
+  },
+  "VN": {
+   "name": "Vietnam",
+   "export_vat": {
+    "treatment": "0% VAT on exported goods",
+    "basis": "Law on VAT No. 48/2024/QH15 (0% rate for exports)",
+    "sources": [
+     "https://www.gdt.gov.vn/"
+    ]
+   },
+   "export_duty": {
+    "status": "check source",
+    "pct": null,
+    "note": "Export tariff (Decree 26/2023/ND-CP, as amended) lists mainly raw materials, minerals, wood, scrap; verify HS.",
+    "sources": [
+     "https://www.customs.gov.vn/"
+    ]
+   },
+   "zones": [
+    {
+     "name": "Export processing zones (EPZ)",
+     "source": "check source"
+    }
+   ]
+  },
+  "BD": {
+   "name": "Bangladesh",
+   "export_vat": {
+    "treatment": "zero-rated exports",
+    "basis": "Value Added Tax and Supplementary Duty Act 2012",
+    "sources": [
+     "https://nbr.gov.bd/"
+    ]
+   },
+   "export_duty": {
+    "status": "check source",
+    "pct": null,
+    "note": "Export duties apply only to listed goods; verify HS with NBR.",
+    "sources": [
+     "https://nbr.gov.bd/"
+    ]
+   },
+   "zones": [
+    {
+     "name": "BEPZA export processing zones",
+     "source": "https://www.bepza.gov.bd/"
+    }
+   ]
+  },
+  "CN": {
+   "name": "China",
+   "export_vat": {
+    "treatment": "exempt-and-refund (export VAT rebate); rebate rate varies by HS and may be below the VAT rate",
+    "basis": "State Taxation Administration export rebate rules",
+    "sources": [
+     "https://www.chinatax.gov.cn/"
+    ]
+   },
+   "export_duty": {
+    "status": "check source",
+    "pct": null,
+    "note": "Export duties apply to listed goods in the Customs Tariff; verify HS.",
+    "sources": [
+     "http://www.customs.gov.cn/"
+    ]
+   },
+   "zones": [
+    {
+     "name": "Pilot Free Trade Zones / comprehensive bonded zones",
+     "source": "check source"
+    }
+   ],
+   "rebate_note": "Unrebated VAT (VAT rate minus rebate rate) is a real export-side cost; rate per HS: check source."
+  },
+  "IN": {
+   "name": "India",
+   "export_vat": {
+    "treatment": "zero-rated supply (IGST refund or export under LUT)",
+    "basis": "IGST Act 2017 s.16",
+    "sources": [
+     "https://cbic-gst.gov.in/"
+    ]
+   },
+   "export_duty": {
+    "status": "check source",
+    "pct": null,
+    "note": "Export duty only on goods in Second Schedule to Customs Tariff Act; verify HS.",
+    "sources": [
+     "https://www.cbic.gov.in/"
+    ]
+   },
+   "zones": [
+    {
+     "name": "Special Economic Zones (SEZ)",
+     "source": "https://sezindia.gov.in/"
+    }
+   ]
+  },
+  "KH": {
+   "name": "Cambodia",
+   "export_vat": {
+    "treatment": "check source",
+    "sources": []
+   },
+   "export_duty": {
+    "status": "check source",
+    "pct": null,
+    "sources": []
+   },
+   "zones": []
+  },
+  "ID": {
+   "name": "Indonesia",
+   "export_vat": {
+    "treatment": "check source",
+    "sources": []
+   },
+   "export_duty": {
+    "status": "check source",
+    "pct": null,
+    "sources": []
+   },
+   "zones": []
+  },
+  "PK": {
+   "name": "Pakistan",
+   "export_vat": {
+    "treatment": "check source",
+    "sources": []
+   },
+   "export_duty": {
+    "status": "check source",
+    "pct": null,
+    "sources": []
+   },
+   "zones": []
+  },
+  "TR": {
+   "name": "Türkiye",
+   "export_vat": {
+    "treatment": "check source",
+    "sources": []
+   },
+   "export_duty": {
+    "status": "check source",
+    "pct": null,
+    "sources": []
+   },
+   "zones": [],
+   "note": "EU-Turkey customs union for industrial goods (A.TR movement certificate)."
+  },
+  "LK": {
+   "name": "Sri Lanka",
+   "export_vat": {
+    "treatment": "check source",
+    "sources": []
+   },
+   "export_duty": {
+    "status": "check source",
+    "pct": null,
+    "sources": []
+   },
+   "zones": []
+  }
+ }
+}

@@ -1,0 +1,19 @@
+hts,origin,heading,program,type,bps,condition,note
+6109.10.00,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.04,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.07,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.11,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.12,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.14,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.18,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.23,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.27,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.37,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.40,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.45,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.60,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.65,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+6109.10.00.70,CN,9903.88.15,301-China-List4A,ad_valorem,750,,USTR product exclusions (9903.88.05-.70) not modelled
+7208.10.15.00,CN,9903.91.01,301-China-4yr-review,ad_valorem,2500,,"Effective with respect to entries on or after September 27, 2024, articles the product of China, as provided for in subd"
+7208.10.15.00,ANY,9903.82.02,232-steel,ad_valorem,5000,outside ch.72/73/74/76: only if metal >= 15% of article weight (note 16(c)),
+7208.10.15.00,GB,9903.82.04,232-steel-UK,ad_valorem,2500,outside ch.72/73/74/76: only if metal >= 15% of article weight (note 16(c)); UK content rules note 16(d),

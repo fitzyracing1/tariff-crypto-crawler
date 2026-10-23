@@ -60,5 +60,5 @@ def test_match_suppliers_never_quotes_rates():
 def test_tools_registered_read_only():
     tools = asyncio.run(ms.mcp.list_tools())
     names = {t.name for t in tools}
-    assert names == {"scan_leads", "get_digest", "list_leads", "match_suppliers"}
+    assert names == {"scan_leads", "get_digest", "list_leads", "match_suppliers", "landed_cost", "compare_plan", "space_launch_cost"}
     assert all(t.annotations.read_only_hint for t in tools)
