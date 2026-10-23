@@ -1,0 +1,24 @@
+name: CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    name: tests (lit when passing, dark when failing)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt pytest
+      - name: Run fixture tests (no live network)
+        run: python -m pytest -q
+      - name: Lit
+        if: success()
+        run: echo "CI is lit"
+      - name: Dark
+        if: failure()
+        run: echo "CI is dark"
