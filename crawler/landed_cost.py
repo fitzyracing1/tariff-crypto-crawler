@@ -443,3 +443,20 @@ def space_route(weight_kg=None, value=None):
     return {"destination": "SPACE", "weight_kg": weight_kg, "goods_value": value, "tariff": "none in orbit",
             "launch_options": out, "notes": SPACE_NOTES, "policy": launch_prices()["policy"],
             "retrieved": launch_prices()["retrieved"]}
+
+
+# HS prefixes whose goods are often export-controlled (spacecraft, avionics, optics, radio, navigation).
+# Text flag only: classification under ITAR (USML) / EAR (CCL) depends on the item, not the HS code.
+LIKELY_CONTROLLED_HS = {"8802": "spacecraft/satellites (USML XV / ECCN 9A515)", "8803": "spacecraft parts",
+                        "8526": "radar/radio navigation", "8525": "transmitters/cameras", "9013": "lasers/optics",
+                        "9014": "navigation instruments", "8542": "integrated circuits (rad-hard)",
+                        "9301": "military weapons", "8710": "armoured vehicles", "3602": "explosives/propellants"}
+
+
+def export_control_flag(hs):
+    """Text-only hint for SpaceLog: is this item likely ITAR/EAR-relevant? Not a determination."""
+    d = re.sub(r"\D", "", str(hs))
+    hit = next((v for k, v in LIKELY_CONTROLLED_HS.items() if d.startswith(k)), None)
+    return {"hs": d, "likely_controlled": bool(hit), "reason": hit,
+            "note": "Text flag only, not a classification. Self-attest a license or 'not required' after checking "
+                    "USML (22 CFR 121) / CCL (15 CFR 774) with counsel."}

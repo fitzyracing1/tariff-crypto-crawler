@@ -17,6 +17,7 @@ from mcp.types import ToolAnnotations
 from .crawl import MIN_SCORE, make_lead
 from .fetch import Fetcher, url_hash
 from .landed_cost import compare_plan as _compare_plan
+from .landed_cost import export_control_flag as _export_control_flag
 from .landed_cost import landed_cost as _landed_cost
 from .landed_cost import space_route as _space_route
 from .sources import federal_register, google_news, hackernews
@@ -210,6 +211,12 @@ def space_launch_cost(weight_kg: float, value: float | None = None) -> dict:
     """Launch cost to orbit by weight from publicly posted per-kg prices only (source URL + date).
     No tariff applies in orbit; ITAR/EAR export-control caveats are given as text, not computed."""
     return _space_route(weight_kg, value)
+
+
+@mcp.tool(annotations=RO)
+def export_control_flag(hs: str) -> dict:
+    """Text-only hint whether an HS code is likely ITAR/EAR-relevant (for SpaceLog attestation). Not a determination."""
+    return _export_control_flag(hs)
 
 
 def main():

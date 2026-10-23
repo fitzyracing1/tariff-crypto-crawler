@@ -128,3 +128,8 @@ def test_space_route_published_prices_only():
     assert lc.space_route(10)["launch_options"][0]["launch_price_usd"] == 350000  # 50 kg minimum block
     assert "check source" in lc.space_route(900)["launch_options"][0]["launch_price_usd"]
     assert lc.compare_plan("6109", "VN", "space", weight_kg=60)["destination"] == "SPACE"
+
+
+def test_export_control_flag_text_only():
+    assert lc.export_control_flag("8802.60")["likely_controlled"]
+    assert not lc.export_control_flag("6109.10")["likely_controlled"]
